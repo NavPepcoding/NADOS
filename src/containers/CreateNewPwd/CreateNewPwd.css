@@ -1,0 +1,28 @@
+.confirmpass_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc( 100vh - 70px );
+    width: 350px;
+    background: rgba(232, 234, 239, 0.45);
+  }
+  
+  .confirmpass_container {
+    width: 90%;
+  }
+  
+  .signup {
+    font-size:29px !important;
+    font-family:Popins !important;
+    font-weight:500 !important;
+  }
+  .width {
+    width: 100%;
+  }
+  .btn {
+    margin-left: 5%;
+  }
+  .submit_btn {
+    width: 94%;
+  }
+  

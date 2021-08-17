@@ -1,0 +1,33 @@
+.signup_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc( 100vh - 70px );
+    width: 350px;
+    background: rgba(232, 234, 239, 0.45);
+ }
+ 
+ .signup_container{
+    width: 90%;  
+ }
+ 
+ .signup{
+ width: 100% !important;
+ font-family: "Popins" !important;
+ font-weight: 500 !important;
+ padding-left: 16px !important;
+ font-size: 40px !important;
+ }
+ .width{
+    width: 100%;
+ }
+ .btn{
+    margin-left: 5%;
+ }
+ .submit_btn{
+    width: 94%; 
+ }
+ .textField {
+    background: rgba(229, 229, 229, 0.8);
+    border-radius: 5px;
+  }

@@ -1,0 +1,24 @@
+.app__bar{
+    background-color:white !important;
+    height: 70px;
+}
+
+
+.appbar__img{
+   height: 60px;
+   width: 60px;
+    margin-left: 20px;
+}
+.tool__bar{
+    color:"balck" !important;
+    display:"flex" !important;
+    justify-content: space-around;
+    height: 100% !important;
+    border: 1px solid !important;
+}
+.header_buttons{
+
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}

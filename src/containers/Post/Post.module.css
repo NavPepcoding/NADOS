@@ -1,0 +1,28 @@
+.post_container{
+   
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+  padding: 2%;
+}
+.post_container>*{
+    width: 600px !important;
+    
+    
+}
+.header__info{
+    display: flex;
+}
+.post__header{
+    font-size: small;
+}
+.postdescseemore{
+    display: flex;
+    flex-direction: row-reverse;
+    color: blue;
+    text-decoration: underline;
+}
+.postdescseemore:hover{
+    cursor: pointer;
+}
+

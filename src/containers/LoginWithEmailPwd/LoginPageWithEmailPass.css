@@ -1,0 +1,73 @@
+
+.maincontainer{
+    /* overflow: hidden; */
+    margin-top: 70px;
+    display: flex;
+    height: calc(100vh - 70px);
+  
+}
+.maincontainer>*{
+    height: 100%;
+}
+.craousel__container{
+    
+     width: calc( 100vw - 350px );
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__container{
+    width: 350px;
+   
+}
+.craousel__container>*{
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .maincontainer{
+        height: 430px;
+    }
+    .craousel__container{
+        display: none;
+    }
+    .login__container{
+        min-width:425px ;
+    }
+  }
+
+  .login_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: calc( 100vh - 70px );
+    width: 350px;
+    background: rgba(232, 234, 239, 0.45);
+ }
+ 
+ .login_container{
+    width: 90%;  
+ }
+ 
+ .login{
+ width: 100%  !important;
+ font-weight: 500  !important;
+ padding-left: 16px  !important;
+ font-size: 40px  !important;
+ }
+ .forgot{
+    display: flex;
+    justify-content: flex-end;
+    font-size: smaller;
+    color: #0397E6;
+    opacity: 0.73;
+    cursor: pointer;
+ }
+ .btn{
+    margin-left: 5%;
+ }
+ .submit_btn{
+    width: 94%; 
+   
+ }
+ 

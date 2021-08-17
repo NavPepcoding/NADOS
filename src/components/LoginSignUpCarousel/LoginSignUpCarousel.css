@@ -1,0 +1,10 @@
+.carousel-root, .carousel {
+    height: 100%;
+    width: 100%;
+}
+
+.image_div img {
+    height: calc(100vh - 70px);
+    width: calc(100vw - 350px);
+    object-fit: contain;
+}

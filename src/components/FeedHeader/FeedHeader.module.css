@@ -1,0 +1,49 @@
+.app__bar{
+    background-color:white !important;
+    height: 70px;
+}
+
+
+.appbar__img{
+   height: 60px;
+   width: 60px;
+   margin-right: 5rem;
+}
+.tool__bar{
+    color:"balck" !important;
+    display:"flex" !important;
+    justify-content: space-between;
+    height: 100% !important;
+    border: 1px solid !important;
+}
+.header_buttons{
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid lightgray;
+}
+
+.btn__head{
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn__head:hover{
+    background-color: rgba(0, 255, 255, 0.102);
+}
+.profile__btn{
+    width: 80px;
+    background-color: 
+    #F0F1F4;
+    height: 100%;
+}
+
+.profile__btn  .profile__avatar{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    
+}
