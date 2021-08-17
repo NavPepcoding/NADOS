@@ -29,7 +29,7 @@ function LoginPagewWithEmailPass() {
               <Card style={{ boxShadow: "none", background: "inherit" }}>
                 <CardContent>
                   <Box m={2}>
-                    <CustomInput label="Email" IconLeft={MailRounded} />
+                    <CustomInput label="Email" disabled="true" IconLeft={MailRounded} />
                   </Box>
                   <Box m={2}>
                     <CustomInput

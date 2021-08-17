@@ -16,11 +16,13 @@ import Login from "./containers/Login/Login";
 const Navigator = () => {
   return (
     <>
+    {/* <Login /> */}
+    
       <Router>
         <Switch>
           <Route path="/email" component={LoginPageWithEmailPass}></Route>
           <Route path="/feed" component={Post}></Route>
-          <ProtectedRoute path="/" params={HomePage}></ProtectedRoute>
+          <ProtectedRoute path="/" exact params={HomePage}></ProtectedRoute>
           <Route path="/forgotpassword" exact component={ForgotPassword} ></Route>
           <Route path="/createnewpwd" exact component={CreateNewPwd}></Route>
           <Route path="/signup" exact component={SignUpPage}></Route>

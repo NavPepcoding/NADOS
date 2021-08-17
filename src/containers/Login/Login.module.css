@@ -55,3 +55,19 @@
 .formInfo__username{
     background-color: hsl(0, 15%, 95%);
 }
+
+.errMsg{
+    color: red;
+    font-weight: bold;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+
+}
+
+
+.maincontainer{
+    display: flex;
+    padding-top: 69px;
+ }

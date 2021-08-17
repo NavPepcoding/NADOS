@@ -18,6 +18,8 @@ const OTP = () => {
   const handleChange = (otp) => {
     setotp(otp)
   }
+
+  console.log("...")
   return (
     <>
     <Header></Header>

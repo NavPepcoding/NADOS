@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Typography, Button, Box, TextField } from "@material-ui/core";
 import "./Login.css";
 import Facebook from "../../assets/Vector.svg";
@@ -8,17 +8,25 @@ import Header from "../../components/LoginSignupHeader/LoginSignUpHeader";
 import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignupCarousel";
 import CustomInput from "../../components/Inputs/CustomInput";
 import { MailRounded } from "@material-ui/icons";
+import { useHistory } from "react-router";
 const Login = () => {
   const [emailId, setEmailId] = useState("");
   const [isValidEmailId, setIsValidEmailId] = useState(true);
-
-  const validateEmail = () => {
+const history = useHistory();
+  const validateEmail = () => { 
     if (!isEmailValid(emailId)) {
       setIsValidEmailId(false);
       return;
     }
     setIsValidEmailId(true);
   };
+
+  useEffect(()=>{
+    if(isValidEmailId){
+      // history.push("/")
+      console.log("success")
+    }
+  },[isValidEmailId])
 
   const isEmailValid = (emailId) => {
     const re =
@@ -56,14 +64,16 @@ const Login = () => {
             </Box>
             <Box className="form__container" component="div">
               <Box m={2}  style={{width:"100%"}}>
-                <CustomInput label="Email" IconLeft={MailRounded} />
+                <CustomInput label="Email" IconLeft={MailRounded} value={emailId} onChange={(e)=>{setEmailId(e.target.value)}} />
+            <h1 className="errMsg">{isValidEmailId?"":"Enter Valid Email"}</h1>
               </Box>
               <Button
                 variant="contained"
                 color="primary"
                 fullWidth
+                
                 onClick={() => {
-                  console.log("HELLO", emailId);
+                  validateEmail()
                 }}
               >
                 Submit
