@@ -9,7 +9,7 @@ import {
 import Header from "../../components/LoginSignupHeader/LoginSignUpHeader";
 import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignupCarousel";
 import { MailRounded, Visibility, VisibilityOff } from "@material-ui/icons";
-import "./CreateNewPwd.css";
+import styles from "./CreateNewPwd.module.css";
 import CustomInput from "../../components/Inputs/CustomInput";
 import HttpsIcon from '@material-ui/icons/Https';
 import PersonIcon from '@material-ui/icons/Person';
@@ -38,20 +38,25 @@ const CreateNewPwd = () => {
   const handleMouseDownConfirmPassword = (event) => {
     event.preventDefault();
   };
+
+  const isPasswordValid = (password)=>{
+    const re = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$";
+    return re.test(password);
+  }
   return (
     <>
     <Header></Header>
-     <div className="maincontainer">
-       <div className="craousel__container">
+     <div className={styles.maincontainer}>
+       <div className={styles.craousel__container}>
         <LoginSignUpCarousel/>
        </div>
-       <div className="login__container">
+       <div className={styles.login__container}>
         
      
-       <div className="confirmpass_form">
-      <div className="confirmpass_container">
+       <div className={styles.confirmpass_form}>
+      <div className={styles.confirmpass_container}>
         <Box m={2}>
-          <Typography  className="signup">
+          <Typography  className={styles.signup}>
             Create New Password
           </Typography>
         </Box>
@@ -75,8 +80,8 @@ const CreateNewPwd = () => {
             </Box>
             <Box m={2}>
             </Box>
-            <div className="btn">
-              <Button variant="contained" color="primary" className="submit_btn">
+            <div className={styles.btn}>
+              <Button variant="contained" color="primary" className={styles.submit_btn}>
                 SUBMIT
               </Button>
             </div>

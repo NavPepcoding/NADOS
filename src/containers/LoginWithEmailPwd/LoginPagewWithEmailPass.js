@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LoginPageWithEmailPass.css";
+import styles from "./LoginPageWithEmailPass.module.css";
 import Header from "../../components/LoginSignupHeader/LoginSignUpHeader";
 import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignupCarousel";
 import { Card, Typography, Button, CardContent, Box } from "@material-ui/core";
@@ -14,15 +14,15 @@ function LoginPagewWithEmailPass() {
   return (
     <>
       <Header></Header>
-      <div className="maincontainer">
-        <div className="craousel__container">
+      <div className={styles.maincontainer}>
+        <div className={styles.craousel__container}>
           <LoginSignUpCarousel />
         </div>
-        <div className="login__container">
-          <div className="login_form">
-            <div className="login_container">
+        <div className={styles.login__container}>
+          <div className={styles.login_form}>
+            <div className={styles.login_container}>
               <Box m={2}>
-                <Typography variant="h4" className="login">
+                <Typography variant="h4" className={styles.login}>
                   Log In
                 </Typography>
               </Box>
@@ -41,14 +41,14 @@ function LoginPagewWithEmailPass() {
                     />
                   </Box>
 
-                  <Box m={2} component="div" className="forgot">
+                  <Box m={2} component="div" className={styles.forgot}>
                     Forgot Password?
                   </Box>
-                  <div className="btn">
+                  <div className={styles.btn}>
                     <Button
                       variant="contained"
                       color="primary"
-                      className="submit_btn"
+                      className={styles.submit_btn}
                     >
                       SUBMIT
                     </Button>

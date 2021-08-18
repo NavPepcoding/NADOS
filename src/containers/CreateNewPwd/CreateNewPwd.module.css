@@ -25,3 +25,8 @@
     width: 94%;
   }
   
+.maincontainer{
+  display: flex;
+  padding-top: 69px;
+}
+  

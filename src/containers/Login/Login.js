@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Button, Box, TextField } from "@material-ui/core";
-import "./Login.css";
+import "./Login.module.css";
 import Facebook from "../../assets/Vector.svg";
 import Google from "../../assets/google.svg";
 import AuthButton from "../../components/AuthButton/AuthButton";
