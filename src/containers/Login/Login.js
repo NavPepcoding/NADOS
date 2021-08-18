@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Button, Box, TextField } from "@material-ui/core";
-import "./Login.module.css";
+import LoginStyle from "./Login.module.css";
 import Facebook from "../../assets/Vector.svg";
 import Google from "../../assets/google.svg";
 import AuthButton from "../../components/AuthButton/AuthButton";
@@ -37,35 +37,35 @@ const history = useHistory();
   return (
     <>
       <Header></Header>
-      <div className="maincontainer">
-        <div className="craousel__container">
+      <div className={LoginStyle.main__container}>
+        <div className={LoginStyle.craousel__container}>
           <LoginSignUpCarousel />
         </div>
-        <div className="login__container">
-          <Box className="login__form" component="div">
+        <div className={LoginStyle.login__container}>
+          <Box className={LoginStyle.login__form} component="div">
             <Box marginBottom={2} width="80%">
               <Typography variant="h4" style={{fontWeight:"600"}}>
                 Login
               </Typography>
             </Box>
-            <Box className="login__container" component="div">
+            <Box className={LoginStyle.login__container} component="div">
               <AuthButton image={Facebook} authType="FaceBook" />
               <AuthButton image={Google} authType="Google" />
 
-              <Box component="div" className="or_container">
+              <Box component="div" className={LoginStyle.or_container}>
                 <Box width="100px" component="div" borderBottom={1}></Box>
                 <Box component="div">OR</Box>
                 <Box width="100px" component="div" borderBottom={1}></Box>
               </Box>
             </Box>
 
-            <Box className="formEmail__info" component="div">
+            <Box className={LoginStyle.formEmail__info} component="div">
               Use your email address
             </Box>
-            <Box className="form__container" component="div">
+            <Box className={LoginStyle.form__container} component="div">
               <Box m={2}  style={{width:"100%"}}>
                 <CustomInput label="Email" IconLeft={MailRounded} value={emailId} onChange={(e)=>{setEmailId(e.target.value)}} />
-            <h1 className="errMsg">{isValidEmailId?"":"Enter Valid Email"}</h1>
+            <h6 className={LoginStyle.errMsg}>{isValidEmailId?"":"Enter Valid Email"}</h6>
               </Box>
               <Button
                 variant="contained"

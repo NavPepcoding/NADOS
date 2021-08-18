@@ -23,11 +23,11 @@ const OTP = () => {
   return (
     <>
     <Header></Header>
-     <div className="maincontainer">
-       <div className="craousel__container">
+     <div className={styles.main__container}>
+       <div className={styles.craousel__container}>
         <LoginSignUpCarousel/>
        </div>
-       <div className="login__container">
+       <div className={styles.login__container}>
        <div className={styles.otp_form}>
    <div className={styles.otp_container}>
      <Box m={2}>
@@ -43,7 +43,7 @@ const OTP = () => {
          <OtpInput value={otp} onChange={handleChange} numInputs={6} shouldAutoFocus isInputNum={true} inputStyle={{height: "2.4rem",width:"2.2rem",borderRadius:"5px",background: "#E4E4E4",border:"none",marginRight:"10px"}} separator={<span></span>} />
          </Box>
 
-         <div className="btn">
+         <div className={styles.btn}>
            <Button variant="contained" color="primary" className="submit_btn">
              SUBMIT
            </Button>
