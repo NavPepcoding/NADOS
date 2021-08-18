@@ -1,3 +1,8 @@
+.maincontainer{
+  display: flex;
+  padding-top: 69px;
+}
+  
 .confirmpass_form {
     display: flex;
     justify-content: center;
@@ -11,22 +16,15 @@
     width: 90%;
   }
   
-  .signup {
+  .createpass {
     font-size:29px !important;
     font-weight:500 !important;
   }
-  .width {
-    width: 100%;
-  }
+ 
   .btn {
     margin-left: 5%;
   }
   .submit_btn {
     width: 94%;
   }
-  
-.maincontainer{
-  display: flex;
-  padding-top: 69px;
-}
   

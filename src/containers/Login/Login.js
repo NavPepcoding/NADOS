@@ -48,7 +48,7 @@ const history = useHistory();
                 Login
               </Typography>
             </Box>
-            <Box className={LoginStyle.login__container} component="div">
+            <Box className={LoginStyle.log__container} component="div">
               <AuthButton image={Facebook} authType="FaceBook" />
               <AuthButton image={Google} authType="Google" />
 

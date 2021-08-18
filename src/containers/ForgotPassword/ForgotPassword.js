@@ -39,10 +39,10 @@ function ForgotPassword() {
     <>
       <Header></Header>
       <div className={styles.maincontainer}>
-        <div className={styles.craousel__container}>
+        <div>
           <LoginSignUpCarousel />
         </div>
-        <div className={styles.login__container}>
+        <div>
           <div className={styles.forgotpass_form}>
             <div className={styles.forgotpass_container}>
               <Box m={2}>
