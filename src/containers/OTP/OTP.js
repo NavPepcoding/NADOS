@@ -27,7 +27,7 @@ const OTP = () => {
        <div className={styles.craousel__container}>
         <LoginSignUpCarousel/>
        </div>
-       <div className={styles.otp__container}>
+       <div className={styles.login__container}>
        <div className={styles.otp_form}>
    <div className={styles.otp_container}>
      <Box m={2}>

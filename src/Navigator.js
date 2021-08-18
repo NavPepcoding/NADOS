@@ -7,7 +7,7 @@ import {
   BrowserRouter as Router,
   Redirect,
 } from "react-router-dom";
-import Post from "./containers/Post/Post";
+
 import SignUpPage from "./containers/SignUpPage/SignUpPage";
 import ForgotPassword from "./containers/ForgotPassword/ForgotPassword";
 import CreateNewPwd from "./containers/CreateNewPwd/CreateNewPwd";
@@ -21,7 +21,7 @@ const Navigator = () => {
       <Router>
         <Switch>
           <Route path="/email" component={LoginPageWithEmailPass}></Route>
-          <Route path="/feed" component={Post}></Route>
+         
           <ProtectedRoute path="/" exact params={HomePage}></ProtectedRoute>
           <Route path="/forgotpassword" exact component={ForgotPassword} ></Route>
           <Route path="/createnewpwd" exact component={CreateNewPwd}></Route>

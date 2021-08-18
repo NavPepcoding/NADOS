@@ -1,0 +1,41 @@
+.postCarousel_container{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.363);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 5;
+}
+.post_carousel{
+   height: 500px;
+   width: 700px;
+  
+}
+.image_div img {
+    height: calc(100vh - 70px);
+    width: calc(100vw - 350px);
+    object-fit: contain;
+}
+.closeCrousel{
+    position: fixed;
+    top: 0;
+    left: 90vw;
+    z-index: 3;
+   
+}
+.closeCrousel:hover{
+  cursor: pointer;
+}
+.carousel.carousel-slider:hover,.carousel.carousel-slider .control-arrow:hover {
+    background: transparent !important;
+} 
+.close{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}

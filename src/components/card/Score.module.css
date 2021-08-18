@@ -1,0 +1,36 @@
+.container{
+    margin-bottom: 10px ! important;
+    margin-left: 16px;
+    /* background-color:#F0F1F4 !important; */
+    /* margin-top:1.9  ! important ; */
+
+         width:88%;
+        padding: 5%;
+        /* margin-left: 7%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+        .text{
+            
+           
+                 color:black;
+                 
+              font-family:Poppins;
+              font-size: 18px;
+              font-weight: 700;
+                  
+                
+
+        }
+        .score{
+           color:#12DD65;
+        
+            font-family:Poppins;
+              font-size: 25px;
+              font-weight: 700;
+
+        
+            
+        }

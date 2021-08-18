@@ -14,12 +14,12 @@ import TwoPostMedia from '../../components/Post/Two/TwoPostMedia';
 import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
 import ShareIcon from '@material-ui/icons/Share';
 
-import ThreePost from '../../components/Post/Three/ThreePost';
-import FourPost from '../../components/Post/Four/FourPost';
-import FivePost from '../../components/Post/Five/FivePost';
-import Dummy from '../../components/Post/Skeleton/Dummy';
-import CommentBox from '../../components/Comments/CommentBox';
-import CommentInput from '../../components/Comments/CommentInput';
+import ThreePost from './Three/ThreePost';
+import FourPost from './Four/FourPost';
+import FivePost from './Five/FivePost';
+import Dummy from './Skeleton/Dummy';
+import CommentBox from '../Comments/CommentBox';
+import CommentInput from '../Comments/CommentInput';
 function Post() {
     const [desc, setDesc] = useState(false);
     const [loading, setLoading] = useState(true);

@@ -4,7 +4,7 @@ import LoginStyle from "./Login.module.css";
 import Facebook from "../../assets/Vector.svg";
 import Google from "../../assets/google.svg";
 import AuthButton from "../../components/AuthButton/AuthButton";
-import Header from "../../components/LoginSignupHeader/LoginSignUpHeader";
+import LoginSignUpHeader from "../../components/LoginSignupHeader/LoginSignUpHeader";
 import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignupCarousel";
 import CustomInput from "../../components/Inputs/CustomInput";
 import { MailRounded } from "@material-ui/icons";
@@ -36,7 +36,7 @@ const history = useHistory();
 
   return (
     <>
-      <Header></Header>
+      <LoginSignUpHeader></LoginSignUpHeader>
       <div className={LoginStyle.main__container}>
         <div className={LoginStyle.craousel__container}>
           <LoginSignUpCarousel />
@@ -48,7 +48,7 @@ const history = useHistory();
                 Login
               </Typography>
             </Box>
-            <Box className={LoginStyle.log__container} component="div">
+            <Box className={LoginStyle.login__container} component="div">
               <AuthButton image={Facebook} authType="FaceBook" />
               <AuthButton image={Google} authType="Google" />
 

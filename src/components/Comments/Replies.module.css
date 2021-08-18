@@ -1,0 +1,17 @@
+.comment_reply{
+    width: 80%;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.comment__header{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment__header>p{
+    font-size: 10px;
+    font-weight: 400;
+}

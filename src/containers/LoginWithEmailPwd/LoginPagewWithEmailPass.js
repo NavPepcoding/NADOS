@@ -18,11 +18,11 @@ function LoginPagewWithEmailPass() {
         <div className={styles.craousel__container}>
           <LoginSignUpCarousel />
         </div>
-        <div className={styles.loginwithemailpass__container}>
-          <div className={styles.loginwithemailpass_form}>
+        <div className={styles.login__container}>
+          <div className={styles.login_form}>
             <div className={styles.login_container}>
               <Box m={2}>
-                <Typography variant="h4" className={styles.loginwithemailpass}>
+                <Typography variant="h4" className={styles.login}>
                   Log In
                 </Typography>
               </Box>

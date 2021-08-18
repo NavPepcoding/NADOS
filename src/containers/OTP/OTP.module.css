@@ -1,20 +1,3 @@
-.main__container{
-   display: flex;
-   /* padding-top: 69px; */
-   margin-top: 70px;
-   height: calc(100vh - 70px);
- }
- .craousel__container{
-   width: calc( 100vw - 350px );
- }
- .otp__container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: 350px;
- }
- 
 .otp_form{
    display: flex;
    justify-content: center;
@@ -41,4 +24,21 @@ padding-left: 16px !important;
 }
 .submit_btn{
    width: 94%; 
+}
+.login__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+.craousel__container{
+  width: calc( 100vw - 350px );
+}
+.main__container{
+  display: flex;
+  /* padding-top: 69px; */
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+
 }
