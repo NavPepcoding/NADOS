@@ -4,7 +4,7 @@ import LoginStyle from "./Login.module.css";
 import Facebook from "../../assets/Vector.svg";
 import Google from "../../assets/google.svg";
 import AuthButton from "../../components/AuthButton/AuthButton";
-import Header from "../../components/LoginSignupHeader/LoginSignUpHeader";
+import LoginSignUpHeader from "../../components/LoginSignupHeader/LoginSignUpHeader";
 import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignupCarousel";
 import CustomInput from "../../components/Inputs/CustomInput";
 import { MailRounded } from "@material-ui/icons";
@@ -32,7 +32,7 @@ const Login = () => {
 
   return (
     <>
-      <Header></Header>
+      <LoginSignUpHeader></LoginSignUpHeader>
       <div className={LoginStyle.main__container}>
         <div className={LoginStyle.craousel__container}>
           <LoginSignUpCarousel />

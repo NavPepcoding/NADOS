@@ -1,0 +1,13 @@
+.twoMedia{
+    height: fit-content;
+    object-fit: contain;
+   display: flex;
+   justify-content: space-between;
+}
+.twoMedia>*{
+    border: 1px solid lightgray;
+    height: auto;
+    width: 49.5%;
+    border-radius: 10px;
+    
+}

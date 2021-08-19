@@ -1,0 +1,11 @@
+.onemedia{
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    border-radius: 5px;
+}
+
+.onemedia>img{
+    width: 100%;
+    border-radius: 10px !important;
+}

@@ -1,9 +1,11 @@
 .post_container{
    border-radius: 8px;
-   margin: 0 auto;
+  /* border: 1px solid; */
+   /* margin-top: 70px; */
    display: flex;
    justify-content: center;
   padding: 2%;
+  
   
 }
 .post_card{
