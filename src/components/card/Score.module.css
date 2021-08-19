@@ -1,36 +1,27 @@
-.container{
-    margin-bottom: 10px ! important;
-    margin-left: 16px;
-    /* background-color:#F0F1F4 !important; */
-    /* margin-top:1.9  ! important ; */
+.container {
+  margin-bottom: 10px !important;
+  margin-left: 16px;
+  width: 88%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-shadow: none !important;
+}
+.text {
+  color: black;
+  font-size: 14px !important;
+  font-weight: 700;
+  min-width: 120px;
+  word-break: break-all !important;
 
-         width:88%;
-        padding: 5%;
-        /* margin-left: 7%; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        }
-        .text{
-            
-           
-                 color:black;
-                 
-              font-family:Poppins;
-              font-size: 18px;
-              font-weight: 700;
-                  
-                
+  
+}
 
-        }
-        .score{
-           color:#12DD65;
-        
-            font-family:Poppins;
-              font-size: 25px;
-              font-weight: 700;
-
-        
-            
-        }
+.score {
+  color: #12dd65;
+  font-size: 25px;
+  font-weight: 700;
+  word-break: break-all;
+  min-width: 40px;
+}

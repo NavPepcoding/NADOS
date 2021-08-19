@@ -14,18 +14,18 @@ function Component() {
   var items = [
     {
       src: "https://avatars.dicebear.com/api/male/.svg",
-      name: "John kumar",
-      score: 25.0,
+      name: "John Snow",
+      score: 25.01,
     },
     {
       src: "https://avatars.dicebear.com/api/male/.svg",
-      name: "John kumar",
-      score: 25.0,
+      name: "Michael Scofild",
+      score: 25.5,
     },
     {
       src: "https://avatars.dicebear.com/api/male/.svg",
-      name: "R",
-      score: 25.0,
+      name: "Vansh",
+      score: 25.2,
     },
   ];
 
