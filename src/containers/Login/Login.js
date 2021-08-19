@@ -9,11 +9,12 @@ import LoginSignUpCarousel from "../../components/LoginSignUpCarousel/LoginSignu
 import CustomInput from "../../components/Inputs/CustomInput";
 import { MailRounded } from "@material-ui/icons";
 import { useHistory } from "react-router";
+import {isEmailValid} from "../../Utils/Validation"
 const Login = () => {
   const [emailId, setEmailId] = useState("");
   const [isValidEmailId, setIsValidEmailId] = useState(true);
-const history = useHistory();
-  const validateEmail = () => { 
+  const history = useHistory();
+  const validateEmail = () => {
     if (!isEmailValid(emailId)) {
       setIsValidEmailId(false);
       return;
@@ -21,18 +22,13 @@ const history = useHistory();
     setIsValidEmailId(true);
   };
 
-  useEffect(()=>{
-    if(isValidEmailId){
-      // history.push("/")
-      console.log("success")
+  useEffect(() => {
+    if (isValidEmailId) {
+      history.push("/email")
     }
-  },[isValidEmailId])
+  }, [isValidEmailId]);
 
-  const isEmailValid = (emailId) => {
-    const re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(emailId);
-  };
+  
 
   return (
     <>
@@ -44,7 +40,7 @@ const history = useHistory();
         <div className={LoginStyle.login__container}>
           <Box className={LoginStyle.login__form} component="div">
             <Box marginBottom={2} width="80%">
-              <Typography variant="h4" style={{fontWeight:"600"}}>
+              <Typography variant="h4" style={{ fontWeight: "600" }}>
                 Login
               </Typography>
             </Box>
@@ -63,17 +59,28 @@ const history = useHistory();
               Use your email address
             </Box>
             <Box className={LoginStyle.form__container} component="div">
-              <Box m={2}  style={{width:"100%"}}>
-                <CustomInput label="Email" IconLeft={MailRounded} value={emailId} onChange={(e)=>{setEmailId(e.target.value)}} />
-            <h6 className={LoginStyle.errMsg}>{isValidEmailId?"":"Enter Valid Email"}</h6>
+              <Box m={2} style={{ width: "100%" }}>
+                <CustomInput
+                  label="Email"
+                  IconLeft={MailRounded}
+                  value={emailId}
+                  onKeyPress={(e) => {
+                    if (e.key == "Enter") e.preventDefault();
+                  }}
+                  onChange={(e) => {
+                    setEmailId(e.target.value);
+                  }}
+                />
+                <h6 className={LoginStyle.errMsg}>
+                  {isValidEmailId ? "" : "Enter Valid Email"}
+                </h6>
               </Box>
               <Button
                 variant="contained"
                 color="primary"
                 fullWidth
-                
                 onClick={() => {
-                  validateEmail()
+                  validateEmail();
                 }}
               >
                 Submit

@@ -29,4 +29,14 @@
   display: flex;
   padding-top: 69px;
 }
+
+.errMsg{
+  height: 25px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}
   

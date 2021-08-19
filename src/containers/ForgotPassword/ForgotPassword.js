@@ -6,6 +6,7 @@ import { Card, Typography, Button, CardContent, Box } from "@material-ui/core";
 import CustomInput from "../../components/Inputs/CustomInput";
 import { MailRounded } from "@material-ui/icons";
 import HttpsIcon from "@material-ui/icons/Https";
+import {isEmailValid} from "../../Utils/Validation"
 function ForgotPassword() {
   const [emailId, setEmailId] = useState("");
   const [isValidEmailId, setIsValidEmailId] = useState(true);
@@ -14,11 +15,6 @@ function ForgotPassword() {
     setpassword(e.target.value);
   };
 
-  const isEmailValid = (emailId) => {
-    const re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(emailId);
-  };
 
   const validateEmail = () => {
     if (!isEmailValid(emailId)) {
@@ -53,17 +49,29 @@ function ForgotPassword() {
               <Card style={{ boxShadow: "none", background: "inherit" }}>
                 <CardContent>
                   <Box m={2}>
-                    <CustomInput label="Email" IconLeft={MailRounded} value={emailId} onChange={(e)=>{setEmailId(e.target.value)}}/>
+                    <CustomInput
+                      label="Email"
+                      IconLeft={MailRounded}
+                      onKeyPress={(e) => {
+                        if (e.key == "Enter") e.preventDefault();
+                      }}
+                      value={emailId}
+                      onChange={(e) => {
+                        setEmailId(e.target.value);
+                      }}
+                    />
                   </Box>
-                  <h1 className={styles.errMsg}>{isValidEmailId?"":"Enter Valid Email"}</h1>
-            
+                  <h1 className={styles.errMsg}>
+                    {isValidEmailId ? "" : "Enter Valid Email"}
+                  </h1>
+
                   <div className={styles.btn}>
                     <Button
                       variant="contained"
                       color="primary"
                       className={styles.submit_btn}
                       onClick={() => {
-                        validateEmail()
+                        validateEmail();
                       }}
                     >
                       SUBMIT

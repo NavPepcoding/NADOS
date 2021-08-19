@@ -86,7 +86,6 @@
 }
 .main__container{
     display: flex;
-    /* padding-top: 69px; */
     margin-top: 70px;
     height: calc(100vh - 70px);
    
