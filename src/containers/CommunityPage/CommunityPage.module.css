@@ -1,0 +1,13 @@
+.sections__container{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 85%;
+    background-color: rgb(226, 226, 168);
+}

@@ -1,0 +1,27 @@
+.skills__container {
+  width: 530px;
+  padding: 2rem 1rem;
+  background-color: #F0F1F4;;
+  border-radius: 0.5rem;
+  height: max-content;
+}
+
+.sectionName {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 14px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+}
+
+.skills__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: max-content;
+}

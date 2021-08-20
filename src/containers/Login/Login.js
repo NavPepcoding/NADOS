@@ -24,7 +24,7 @@ const Login = () => {
 
   useEffect(() => {
     if (isValidEmailId) {
-      history.push("/email")
+      // history.push("/email")
     }
   }, [isValidEmailId]);
 

@@ -1,0 +1,71 @@
+.recommend__card {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #d6e4ec;
+  padding: 1rem 0;
+}
+
+.recommend {
+  margin-left: 1rem;
+}
+
+.recommended__content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+  margin: 0.5rem 0;
+}
+
+.username {
+  font-style: normal;
+  line-height: 19px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.userPosition {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.watchVideo__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 140px;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.watchBtn__text {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.watchVideo__btn:hover {
+  background-color: rgb(211, 208, 208);
+}
+
+.video__log:hover {
+  background-color: rgb(211, 208, 208);
+}
+
+.video__log {
+  padding: 0 10px;
+  background-color: #f0f1f4;
+  border-radius: 20px;
+}

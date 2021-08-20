@@ -1,0 +1,17 @@
+.leftSection {
+  background-color: lightgray;
+  width: 59%;
+}
+
+.sectionheader__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 12px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}

@@ -13,6 +13,8 @@ import ForgotPassword from "./containers/ForgotPassword/ForgotPassword";
 import CreateNewPwd from "./containers/CreateNewPwd/CreateNewPwd";
 import OTP from "./containers/OTP/OTP";
 import Login from "./containers/Login/Login";
+import Profile from "./components/Profile/Profile";
+import CommunityPage from "./containers/CommunityPage/CommunityPage";
 const Navigator = () => {
   return (
     <>
@@ -20,7 +22,7 @@ const Navigator = () => {
     
       <Router>
         <Switch>
-          <Route path="/email" component={LoginPageWithEmailPass}></Route>
+          <Route path="/email" exact component={LoginPageWithEmailPass}></Route>
          
           <ProtectedRoute path="/" exact params={HomePage}></ProtectedRoute>
           <Route path="/forgotpassword" exact component={ForgotPassword} ></Route>
@@ -28,6 +30,8 @@ const Navigator = () => {
           <Route path="/signup" exact component={SignUpPage}></Route>
           <Route path="/otp" exact component={OTP}></Route>
           <Route path="/login" exact component={Login}></Route>
+          <Route path="/profile" exact component={Profile}></Route>
+          <Route path="/community" exact component={CommunityPage}></Route>
         </Switch>
       </Router>
     </>
