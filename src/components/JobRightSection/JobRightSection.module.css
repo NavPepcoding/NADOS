@@ -1,4 +1,27 @@
-.JobRightSection{
-    background-color: lightsalmon;
-    width: 39%;
+.JobRightSection {
+  width: 39%;
+}
+
+.postJob {
+  width: 100%;
+
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.righrSectionBtn {
+  width: 49%;
+  background-color: #f0f1f4;
+  height: 62px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
 }

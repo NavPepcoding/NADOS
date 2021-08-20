@@ -1,0 +1,41 @@
+.recommended_container{
+    width: 100%;
+    padding: 0 10px;
+
+}
+.recommended_container>*{
+    width: 100% !important;
+    background-color:  #F0F1F4 !important;
+}
+.recommend_card{
+    width: 95% !important;
+    margin: 0 auto;
+    display: flex !important;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+.recommend_text ,.recommend_btn{
+    font-size: small !important;
+}
+
+.recommend_greybtn{
+    background-color: #F0F1F4 !important;
+}
+.recommend_btn{
+   border-radius: 10px !important;
+    height: 20px;
+}
+.recommend_card_content{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+.job_type{
+    font-size: xx-small;
+    border-radius: 10px;
+    background-color: #89e84e69 !important;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px;
+}
