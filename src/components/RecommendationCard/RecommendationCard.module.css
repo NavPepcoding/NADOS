@@ -1,9 +1,19 @@
 .recommend__card {
   width: 100%;
-  display: flex;
-  border-bottom: 1px solid #d6e4ec;
-  padding: 1rem 0;
+
+  padding:0;
+  margin: 0.8rem 0;
+  background-color:#F0F1F4 !important;
 }
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 0px !important;
+}
+
+.MuiCardContent-root {
+  padding: 1rem !important;
+}
+
 
 .recommend {
   margin-left: 1rem;
@@ -14,12 +24,10 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    /* or 143% */
     
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-  margin: 0.5rem 0;
 }
 
 .username {
@@ -46,6 +54,8 @@
 
   width: 140px;
 
+  margin-left: 0.5rem;
+
   padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: #fff;
@@ -61,7 +71,7 @@
 }
 
 .video__log:hover {
-  background-color: rgb(211, 208, 208);
+  background-color: #f0f0f0;
 }
 
 .video__log {
